@@ -56,4 +56,25 @@ def cadastro_doador_e_doacao():
                 print(f'Numero: {numero}')
                 print(f'CEP: {cep} ')
                 print(f'bairro {bairro}')
-                
+
+def cadastro_donatario():
+    print('Bem vindo a sessão de cadastro de donatário')
+    print('Por favor preencha os campos abaixo:\n')
+    nome = input('Digite seu nome: ')
+    CPF = input('Digite seu CPF: ')
+    data_nascimento = input('Digite sua data de nascimento: ')
+    logradouro = input('Digite seu logradouro: ')
+    numero = input('Digite o numero da sua casa: ')
+    bairro = input('Digite seu bairro: ')
+    print('Cadastro finalizado')
+    print('A seguir voce irá informar sua renda para identificarmos o seu nivel de prioridade\n')
+    print('--------NIVEIS DE PRIORIDADE--------')
+    renda_bruta = float(input('Digite sua renda bruta de todos os moradores: '))
+    qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
+    prioridade = renda_bruta/qtd_pessoas_familia
+    if prioridade == 1320:
+        print('O seu nível de prioridade é nivel 2')
+    elif prioridade <= 1320:
+        print('O seu nível de prioridade é nivel 3')
+    elif prioridade > 1320:
+        print('O seu nível de prioridade é nivel 1')
