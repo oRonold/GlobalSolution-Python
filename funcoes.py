@@ -1,3 +1,6 @@
+from xml.etree.ElementTree import SubElement
+
+
 def cadastro_doador_e_doacao():
     print('Bem-vindo a sessão de cadastro temporario de doadores de São Paulo!')
     print('Por favor preencha os campos abaixo\n')
@@ -20,31 +23,30 @@ def cadastro_doador_e_doacao():
         alimento = input('Qual alimento voce quer doar? ')
         qtd = float(input('Qual a quantidade em KG? '))
         regiao_doacao = input('Digite em qual região voce quer que a sua doação seja redirecionada em São Paulo:(norte/sul/leste/oeste) ')
-        if regiao_doacao == 'sul':
-            print('Perfeito, a sua doação sera direcionada para o galpão da Cruz Vermelha Brasileira')
-        elif regiao_doacao == 'oeste':
-            print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
-        elif regiao_doacao == 'leste':
-            print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
-        elif regiao_doacao == 'norte':
-            print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
+        #if regiao_doacao == 'sul':
+        #    print('Perfeito, a sua doação sera direcionada para o galpão da Cruz Vermelha Brasileira')
+        #elif regiao_doacao == 'oeste':
+        #    print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
+        #elif regiao_doacao == 'leste':
+        #    print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
+        #elif regiao_doacao == 'norte':
+        #    print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
         
         print('A seguir conversaremos sobre o transporte do alimento')
         print('No caso da transportadora ser selecionada, a Instituição selecionada precisara ser contatada, uma taxa será cobrada para o transporte')
-        transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(por mim/transportadora')
-        if transporte == 'por mim':
-            if regiao_doacao == 'sul':
-                print('O galpão da cruz vermelha se localiza na: Av. Moreira Guimarães, 699, Indianópolis')
-        elif transporte == 'por mim':
+        transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
+        if transporte == 'eu':
+            
+        elif transporte == 'eu':
             if regiao_doacao == 'oeste':
                 print('O depósito da FUSSP se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
-        elif transporte == 'por mim':
+        elif transporte == 'eu':
             if regiao_doacao == 'leste':
                 print('O depósito da ONG Palavra Viva se localiza na: Rua Dr. Camilo Haddad, 186 Altos - Parque São Lucas')
-        elif transporte == 'por mim':
+        elif transporte == 'eu':
             if regiao_doacao == 'norte':
                 print('O depósito da ONG Banco de Alimentos Rua Sobral Júnior, 264 - Vila Maria Alta')
-        elif transporte == 'por mim':
+        elif transporte == 'eu':
             if regiao_doacao == 'transportadora':
                 print('Por favor, digite seu endereço:\n')
                 logradouro = input('Logradouro: ')
@@ -69,12 +71,18 @@ def cadastro_donatario():
     print('Cadastro finalizado')
     print('A seguir voce irá informar sua renda para identificarmos o seu nivel de prioridade\n')
     print('--------NIVEIS DE PRIORIDADE--------')
-    renda_bruta = float(input('Digite sua renda bruta de todos os moradores: '))
+    print('Existem três niveis de prioridade:')
+    print('Nível 1: A de menor prioridade das tres')
+    print('Nível 2: A de prioridade média')
+    print('Nível 3: A de maior prioridade')
+    renda_bruta = float(input('Digite sua renda bruta somada de todos os moradores: '))
     qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
     prioridade = renda_bruta/qtd_pessoas_familia
     if prioridade == 1320:
         print('O seu nível de prioridade é nivel 2')
-    elif prioridade <= 1320:
+    elif prioridade < 1320:
         print('O seu nível de prioridade é nivel 3')
     elif prioridade > 1320:
         print('O seu nível de prioridade é nivel 1')
+
+cadastro_doador_e_doacao()
