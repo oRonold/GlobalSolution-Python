@@ -15,5 +15,8 @@ def cadastro_doador_e_doacao():
     if sim_nao == 'n':
         print('Sessão cadastro encerrado, seleciona a opção 1 para criar um novo cadastro temporário')
         exit()
-    else:
-        print('A seguir voce')
+    elif sim_nao == 's':
+        print('A seguir voce podera realizar a sua doação para a ONG mais proxima da sua região\n')
+        alimento = input('Qual alimento voce quer doar? ')
+        qtd = float(input('Qual a quantidade em KG? '))
+
