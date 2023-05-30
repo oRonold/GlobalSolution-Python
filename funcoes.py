@@ -25,7 +25,7 @@ def cadastro_doador_e_doacao():
         elif regiao_doacao == 'oeste':
             print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
         elif regiao_doacao == 'leste':
-            print('Ótimo, a sua doação será direcionada para a Associação Fenix, na zona leste')
+            print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
         elif regiao_doacao == 'norte':
             print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
         
@@ -40,4 +40,14 @@ def cadastro_doador_e_doacao():
                 print('O depósito da FUSSP se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
         elif transporte == 'por mim':
             if regiao_doacao == 'leste':
-                
+                print('O depósito da ONG Palavra Viva se localiza na: Rua Dr. Camilo Haddad, 186 Altos - Parque São Lucas')
+        elif transporte == 'por mim':
+            if regiao_doacao == 'norte':
+                print('O depósito da ONG Banco de Alimentos Rua Sobral Júnior, 264 - Vila Maria Alta')
+        elif transporte == 'por mim':
+            if regiao_doacao == 'transportadora':
+                print('Por favor, digite seu endereço:\n')
+                logradouro = input('Logradouro: ')
+                numero = int(input('Digite o seu numero: '))
+                cep = input('Digite seu CEP: ')
+                bairro = input('Digite seu bairro: ')
