@@ -29,4 +29,15 @@ def cadastro_doador_e_doacao():
         elif regiao_doacao == 'norte':
             print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
         
-        transporte = input('Agora o transporte do alimento, a sua preferencia é ')
+        print('A seguir conversaremos sobre o transporte do alimento')
+        print('No caso da transportadora ser selecionada, a Instituição selecionada precisara ser contatada, uma taxa será cobrada para o transporte')
+        transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(por mim/transportadora')
+        if transporte == 'por mim':
+            if regiao_doacao == 'sul':
+                print('O galpão da cruz vermelha se localiza na: Av. Moreira Guimarães, 699, Indianópolis')
+        elif transporte == 'por mim':
+            if regiao_doacao == 'oeste':
+                print('O depósito da FUSSP se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
+        elif transporte == 'por mim':
+            if regiao_doacao == 'leste':
+                
