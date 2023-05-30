@@ -51,3 +51,9 @@ def cadastro_doador_e_doacao():
                 numero = int(input('Digite o seu numero: '))
                 cep = input('Digite seu CEP: ')
                 bairro = input('Digite seu bairro: ')
+                print('Endereço cadastro, resumo da operação:\n')
+                print(f'Logradouro: {logradouro}')
+                print(f'Numero: {numero}')
+                print(f'CEP: {cep} ')
+                print(f'bairro {bairro}')
+                
