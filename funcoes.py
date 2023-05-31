@@ -119,6 +119,7 @@ def cadastro_donatario():
     print('Nível 3: A que precisa de assistencia de alto nivel')
     renda_bruta = float(input('Digite sua renda bruta somada de todos os moradores: '))
     qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
+    renda_per_capita = print(prioridade)
     prioridade = renda_bruta/qtd_pessoas_familia
     if prioridade == 1320:
         print('O seu nível de prioridade é nivel 2')
@@ -127,4 +128,15 @@ def cadastro_donatario():
     elif prioridade > 1320:
         print('O seu nível de prioridade é nivel 1')
 
-cadastro_donatario()
+def lista_de_alimentos_doacao():
+    print('Caso voce queira criar uma lista de alimentos a ser doado, siga os passos:')
+
+    lista = []
+    while True:
+        print('Por favor, digite os alimentos desejados para serem doados:\n')
+        alimento = input('Digite um alimento ou digite sair para finalizar: ')
+        if alimento.lower() == 'sair':
+            break
+
+        lista.append(alimento)
+    return lista
