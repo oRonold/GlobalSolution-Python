@@ -22,21 +22,30 @@ def cadastro_doador_e_doacao():
         print('A seguir voce podera realizar a sua doação para a ONG mais proxima da sua região\n')
         alimento = input('Qual alimento voce quer doar? ')
         qtd = float(input('Qual a quantidade em KG? '))
-        regiao_doacao = input('Digite em qual região voce quer que a sua doação seja redirecionada em São Paulo:(norte/sul/leste/oeste) ')
-        #if regiao_doacao == 'sul':
-        #    print('Perfeito, a sua doação sera direcionada para o galpão da Cruz Vermelha Brasileira')
-        #elif regiao_doacao == 'oeste':
-        #    print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
-        #elif regiao_doacao == 'leste':
-        #    print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
-        #elif regiao_doacao == 'norte':
-        #    print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
+        
         
         print('A seguir conversaremos sobre o transporte do alimento')
         print('No caso da transportadora ser selecionada, a Instituição selecionada precisara ser contatada, uma taxa será cobrada para o transporte')
-        transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
-        if transporte == 'eu':
-            
+        
+        #if transporte == 'eu':
+        regiao_doacao = input('Digite em qual região voce quer que a sua doação seja redirecionada em São Paulo:(norte/sul/leste/oeste) ')
+        if regiao_doacao == 'sul':
+            transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
+            if transporte == 'eu':
+                print('A Instituição da sua região se chama Cruz Vermelha de São Paulo')
+                print('Se localiza na: Av. Moreira Guimarães, 699 - Indianópolis')
+        elif regiao_doacao == 'oeste':
+            transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
+            if transporte == 'eu':
+                print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
+                print('Se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
+        elif regiao_doacao == 'leste':
+            transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
+            if transporte == 'eu':
+                print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
+                print('Se localiza na: Rua Dr. Camilo Haddad, 186 Altos - Parque São Lucas')
+        elif regiao_doacao == 'norte':
+            print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')    
         elif transporte == 'eu':
             if regiao_doacao == 'oeste':
                 print('O depósito da FUSSP se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
