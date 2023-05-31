@@ -104,7 +104,7 @@ def cadastro_doador_e_doacao():
 def cadastro_donatario():
     print('Bem vindo a sessão de cadastro de donatário')
     print('Por favor preencha os campos abaixo:\n')
-    nome = input('Digite seu nome: ').title()
+    nome = input('Digite seu nome completo: ').title()
     cpf = input('Digite seu CPF: ')
     data_nascimento = input('Digite sua data de nascimento: ')
     logradouro = input('Digite seu logradouro: ')
