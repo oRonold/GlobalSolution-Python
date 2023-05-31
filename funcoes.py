@@ -49,7 +49,7 @@ def cadastro_doador_e_doacao():
             transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora?(eu/transportadora) ')
             if transporte == 'eu':
                 print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
-                print('Se localiza na: Rua Sobral Júnior, 264 - Vila Maria ')    
+                print('Se localiza na: Rua Sobral Júnior, 264 - Vila Maria ') 
 
         if regiao_doacao == 'transportadora':
             print('Por favor, digite seu endereço:\n')
