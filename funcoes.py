@@ -5,7 +5,7 @@ def cadastro_doador_e_doacao():
     print('Bem-vindo a sessão de cadastro temporario de doadores de São Paulo!')
     print('Por favor preencha os campos abaixo\n')
 
-    nome_doador = input('Digite seu nome completo: ')
+    nome_doador = input('Digite seu nome completo: ').title()
     data_nascimento = int(input('Digite a sua data de nascimento: '))
     cpf = input('Digite seu CPF: ')
     regiao = input('Digite sua regiao em que voce mora em São Paulo: \n')
@@ -104,7 +104,7 @@ def cadastro_doador_e_doacao():
 def cadastro_donatario():
     print('Bem vindo a sessão de cadastro de donatário')
     print('Por favor preencha os campos abaixo:\n')
-    nome = input('Digite seu nome: ')
+    nome = input('Digite seu nome: ').title()
     cpf = input('Digite seu CPF: ')
     data_nascimento = input('Digite sua data de nascimento: ')
     logradouro = input('Digite seu logradouro: ')
@@ -119,7 +119,7 @@ def cadastro_donatario():
     print('Nível 3: A que precisa de assistencia de alto nivel')
     renda_bruta = float(input('Digite sua renda bruta somada de todos os moradores: '))
     qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
-    renda_per_capita = print(prioridade)
+    renda_per_capita = print(f'Renda per capita da familia: {prioridade}')
     prioridade = renda_bruta/qtd_pessoas_familia
     if prioridade == 1320:
         print('O seu nível de prioridade é nivel 2')
@@ -134,9 +134,17 @@ def lista_de_alimentos_doacao():
     lista = []
     while True:
         print('Por favor, digite os alimentos desejados para serem doados:\n')
-        alimento = input('Digite um alimento ou digite sair para finalizar: ')
+        alimento = input('Digite um alimento ou digite sair para finalizar: ').title()
         if alimento.lower() == 'sair':
+            print('Alimentos adicionados:')
+            for alimento in lista:
+                print(alimento)
             break
 
         lista.append(alimento)
+        for alimento in lista:
+            print(alimento)
     return lista
+
+
+lista_de_alimentos_doacao()
