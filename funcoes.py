@@ -145,6 +145,3 @@ def lista_de_alimentos_doacao():
         for alimento in lista:
             print(alimento)
     return lista
-
-
-lista_de_alimentos_doacao()
