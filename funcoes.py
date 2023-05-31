@@ -18,6 +18,7 @@ def cadastro_doador_e_doacao():
     if sim_nao == 'n':
         print('Sessão cadastro encerrado, seleciona a opção 1 para criar um novo cadastro temporário')
         exit()
+
     elif sim_nao == 's':
         print('A seguir voce podera realizar a sua doação para a ONG mais proxima da sua região\n')
         alimento = input('Qual alimento voce quer doar? ')
@@ -25,9 +26,6 @@ def cadastro_doador_e_doacao():
         
         
         print('A seguir conversaremos sobre o transporte do alimento')
-        print('No caso da transportadora ser selecionada, a Instituição selecionada precisara ser contatada, uma taxa será cobrada para o transporte')
-        
-        #if transporte == 'eu':
         regiao_doacao = input('Digite em qual região voce quer que a sua doação seja redirecionada em São Paulo:(norte/sul/leste/oeste) ')
 
         if regiao_doacao == 'sul':
@@ -35,85 +33,72 @@ def cadastro_doador_e_doacao():
             if transporte == '1':
                 print('A Instituição da sua região se chama Cruz Vermelha de São Paulo')
                 print('Se localiza na: Av. Moreira Guimarães, 699 - Indianópolis')
+            
             elif transporte == '2':
                 print('Por favor, digite seu endereço:\n')
                 logradouro = input('Logradouro: ')
                 numero = int(input('Digite o seu numero: '))
                 cep = input('Digite seu CEP: ')
-                bairro = input('Digite seu bairro: ')
-                print('Endereço cadastro, resumo da operação:\n')
+                print('Otimo, seus dados serão enviados para a instituição Cruz Vermelha de São Paulo, que se localiza na sua região')
+                print('Assim que o transporte estiver a caminho, voce sera notificado\n')
+                print('Endereço cadastro, resumo da operação:')
                 print(f'Logradouro: {logradouro}')
                 print(f'Numero: {numero}')
                 print(f'CEP: {cep} ')
-                print(f'bairro {bairro}')
-                print('Perfeito! Resumo das informações cadastradas:\n')
-                print(f'Logradouro: {logradouro}')
-                print(f'Numero da residencia: {numero}')
-                print(f'CEP: {cep}')
-                print(f'Bairro: {bairro}')
+
         elif regiao_doacao == 'oeste':
             transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora? Digite o número(1 - eu / 2 - transportadora) ')
             if transporte == '1':
                 print('Excelente, a sua doação sera direcionada para o depósito da FUSSP(Fundo Social de São Paulo)')
                 print('Se localiza na: Av. Marechal Mario Guedes, 301, no Jaguaré')
+            
             elif transporte == '2':
                 print('Por favor, digite seu endereço:\n')
                 logradouro = input('Logradouro: ')
                 numero = int(input('Digite o seu numero: '))
                 cep = input('Digite seu CEP: ')
-                bairro = input('Digite seu bairro: ')
-                print('Endereço cadastro, resumo da operação:\n')
+                print('Otimo, seus dados serão passados para a instituição FUSSP(Fundo Social de São Paulo), localizado na sua região')
+                print('Assim que o transporte estiver a caminho, voce sera notificado\n')
+                print('Endereço cadastro, resumo da operação:')
                 print(f'Logradouro: {logradouro}')
                 print(f'Numero: {numero}')
                 print(f'CEP: {cep} ')
-                print(f'bairro {bairro}')
-                print('Perfeito! Resumo das informações cadastradas:\n')
-                print(f'Logradouro: {logradouro}')
-                print(f'Numero da residencia: {numero}')
-                print(f'CEP: {cep}')
-                print(f'Bairro: {bairro}')
+
         elif regiao_doacao == 'leste':
             transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora? Digite o número(1 - eu / 2 - transportadora) ')
             if transporte == '1':
                 print('Ótimo, a sua doação será direcionada para a ONG Palavra Viva, na zona leste')
                 print('Se localiza na: Rua Dr. Camilo Haddad, 186 Altos - Parque São Lucas')
+            
             elif transporte == '2':
                 print('Por favor, digite seu endereço:\n')
                 logradouro = input('Logradouro: ')
                 numero = int(input('Digite o seu numero: '))
                 cep = input('Digite seu CEP: ')
-                bairro = input('Digite seu bairro: ')
-                print('Endereço cadastro, resumo da operação:\n')
+                print('Otimo, os seus dados serão enviados para a instituição Palavra Viva, localizada na sua região')
+                print('Assim que o transporte estiver a caminho, voce sera notificado\n')
+                print('Endereço cadastro, resumo da operação:')
                 print(f'Logradouro: {logradouro}')
                 print(f'Numero: {numero}')
                 print(f'CEP: {cep} ')
-                print(f'bairro {bairro}')
-                print('Perfeito! Resumo das informações cadastradas:\n')
-                print(f'Logradouro: {logradouro}')
-                print(f'Numero da residencia: {numero}')
-                print(f'CEP: {cep}')
-                print(f'Bairro: {bairro}')
+
         elif regiao_doacao == 'norte':
             transporte = input('O transporte do alimento será realizado pela sua pessoa ou por uma transportadora? Digite o número(1 - eu / 2 - transportadora) ')
             if transporte == '1':
                 print('Excelente, a sua doação será direcionada para o Banco de Alimentos localizado na zona Norte')
                 print('Se localiza na: Rua Sobral Júnior, 264 - Vila Maria ')
+            
             elif transporte == '2':
                 print('Por favor, digite seu endereço:\n')
                 logradouro = input('Logradouro: ')
                 numero = int(input('Digite o seu numero: '))
                 cep = input('Digite seu CEP: ')
-                bairro = input('Digite seu bairro: ')
-                print('Endereço cadastro, resumo da operação:\n')
+                print('Os seus dados serão enviados para a instituição Banco de Alimentos, localizado na Zona Norte')
+                print('Assim que o transporte estiver a caminho, voce sera notificado\n')
+                print('Endereço cadastro, resumo da operação:')
                 print(f'Logradouro: {logradouro}')
                 print(f'Numero: {numero}')
                 print(f'CEP: {cep} ')
-                print(f'bairro {bairro}')
-                print('Perfeito! Resumo das informações cadastradas:\n')
-                print(f'Logradouro: {logradouro}')
-                print(f'Numero da residencia: {numero}')
-                print(f'CEP: {cep}')
-                print(f'Bairro: {bairro}')
             
 
 def cadastro_donatario():
@@ -129,9 +114,9 @@ def cadastro_donatario():
     print('A seguir voce irá informar sua renda para identificarmos o seu nivel de prioridade\n')
     print('--------NIVEIS DE PRIORIDADE--------')
     print('Existem três niveis de prioridade:')
-    print('Nível 1: A de menor prioridade das tres')
-    print('Nível 2: A de prioridade média')
-    print('Nível 3: A de maior prioridade')
+    print('Nível 1: A que precisa de menos assistencia')
+    print('Nível 2: A que precisa de assistencia nivel moderada')
+    print('Nível 3: A que precisa de assistencia de alto nivel')
     renda_bruta = float(input('Digite sua renda bruta somada de todos os moradores: '))
     qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
     prioridade = renda_bruta/qtd_pessoas_familia
@@ -142,4 +127,4 @@ def cadastro_donatario():
     elif prioridade > 1320:
         print('O seu nível de prioridade é nivel 1')
 
-cadastro_doador_e_doacao()
+cadastro_donatario()
