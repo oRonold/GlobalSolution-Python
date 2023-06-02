@@ -16,10 +16,10 @@ def menu():
     elif opcao_escolhida == 2:
         doacao()
 
-    elif opcao_escolhida == 2:
+    elif opcao_escolhida == 3:
         cadastro_donatario()
 
-    elif opcao_escolhida == 3:
+    elif opcao_escolhida == 4:
         lista_de_alimentos_doacao()
 
     else:
