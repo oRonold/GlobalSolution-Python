@@ -13,4 +13,4 @@ Esse projeto entrega uma possivel solução para o tema de Global Solution, a Fo
 
 Instruções
 
-Para o usuario conseguir utilizar o programa ele começará pelo menu, lá ele selecionara a opção que lhe convem, apos isso ele sera redirecionado para a opção escolhida, com todas as intruções sobre o que ele deverá fazer.
+Para o usuario conseguir utilizar o programa ele começará pelo menu, lá ele selecionara a opção que lhe convem, apos isso ele sera redirecionado para a opção escolhida com todas as intruções sobre o que ele deverá fazer em cada uma.
