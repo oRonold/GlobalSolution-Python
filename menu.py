@@ -4,9 +4,10 @@ def menu():
     print('Bem vindo ao menu de cadastro e doações de alimentos para as regiões da capital de São Paulo!')
     print('Siga as instruções abaixo\n')
 
-    print('1 - Cadastro e doação de alimentos')
-    print('2 - Cadastro de donatário(necessita de assistencia de doações)')
-    print('3 - Criar lista de alimentos para doar')
+    print('1 - Cadastro para doador')
+    print('2 - Acessar diretamente a sessão de doação')
+    print('3 - Cadastro para donatário(quem se beneficiara de doações')
+    print('4 - Criar lista de alimentos para doar')
 
     opcao_escolhida = int(input('Digite a opção desejada: '))
 
