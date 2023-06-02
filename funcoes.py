@@ -23,6 +23,7 @@ def cadastro_doador():
         doacao()
 
 def doacao():
+    print('')
     print('Bem vindo a sessão de doações de alimentos!')
     print('Por favor, siga os campos abaixo:\n')
     alimento = input('Qual alimento voce quer doar? ')
