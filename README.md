@@ -10,7 +10,10 @@ Nicoly Oliveira Santos - RM 552410 - 1TDSS
 Detalhes do Projeto
 
 Esse projeto entrega uma possivel solução para o tema de Global Solution, a Fome. O programa possui um menu com itens, que funcionaram na escolha do usuário, como criar cadastro como doador, criar cadastro como donatário(quem necessita da doação), fazer uma doação diretamente ou criar uma lista de alimentos se o caso do usuario for mais de um tipo.
+<<<<<<< HEAD
 
 Instruções
 
 Para o usuario conseguir utilizar o programa ele começará pelo menu, lá ele selecionara a opção que lhe convem, apos isso ele sera redirecionado para a opção escolhida, com todas as intruções sobre o que ele deverá fazer.
+=======
+>>>>>>> 02bd83d7588f89f7496c6945956b633210e81971
