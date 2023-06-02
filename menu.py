@@ -1,4 +1,4 @@
-from funcoes import cadastro_doador_e_doacao, cadastro_donatario, lista_de_alimentos_doacao
+from funcoes import cadastro_doador, cadastro_donatario, doacao, lista_de_alimentos_doacao, doacao
 
 def menu():
     print('Bem vindo ao menu de cadastro e doações de alimentos para as regiões da capital de São Paulo!')
@@ -11,7 +11,10 @@ def menu():
     opcao_escolhida = int(input('Digite a opção desejada: '))
 
     if opcao_escolhida == 1:
-        cadastro_doador_e_doacao()
+        cadastro_doador()
+    
+    elif opcao_escolhida == 2:
+        doacao()
 
     elif opcao_escolhida == 2:
         cadastro_donatario()
