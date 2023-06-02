@@ -3,7 +3,7 @@ from xml.etree.ElementTree import SubElement
 
 def cadastro_doador():
     print('Bem-vindo a sessão de cadastro temporario de doadores de São Paulo!')
-    print('Por favor preencha os campos abaixo\n')
+    print('Por favor preencha os campos abaixo:\n')
 
     nome_doador = input('Digite seu nome completo: ').title()
     data_nascimento = int(input('Digite a sua data de nascimento: '))
