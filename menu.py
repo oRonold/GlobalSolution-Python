@@ -6,7 +6,7 @@ def menu():
 
     print('1 - Cadastro para doador')
     print('2 - Acessar diretamente a sessão de doação')
-    print('3 - Cadastro para donatário(quem se beneficiara de doações')
+    print('3 - Cadastro para donatário(quem se beneficiara de doações)')
     print('4 - Criar lista de alimentos para doar')
 
     opcao_escolhida = int(input('Digite a opção desejada: '))
