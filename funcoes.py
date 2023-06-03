@@ -43,7 +43,7 @@ def doacao():
             logradouro = input('Logradouro: ')
             numero = int(input('Digite o seu numero: '))
             cep = input('Digite seu CEP: ')
-            print('Otimo, seus dados serão enviados para a instituição Cruz Vermelha de São Paulo, que se localiza na sua região')
+            print('Otimo, seus dados serão enviados para a instituição Cruz Vermelha de São Paulo, que se localiza na zona sul')
             print('Assim que o transporte estiver a caminho, voce sera notificado\n')
             print('Endereço cadastro, resumo da operação:')
             print(f'Logradouro: {logradouro}')
@@ -60,7 +60,7 @@ def doacao():
             logradouro = input('Logradouro: ')
             numero = int(input('Digite o seu numero: '))
             cep = input('Digite seu CEP: ')
-            print('Otimo, seus dados serão passados para a instituição FUSSP(Fundo Social de São Paulo), localizado na sua região')
+            print('Otimo, seus dados serão passados para a instituição FUSSP(Fundo Social de São Paulo), localizado na zona oeste')
             print('Assim que o transporte estiver a caminho, voce sera notificado\n')
             print('Endereço cadastro, resumo da operação:')
             print(f'Logradouro: {logradouro}')
@@ -77,7 +77,7 @@ def doacao():
             logradouro = input('Logradouro: ')
             numero = int(input('Digite o seu numero: '))
             cep = input('Digite seu CEP: ')
-            print('Otimo, os seus dados serão enviados para a instituição Palavra Viva, localizada na sua região')
+            print('Otimo, os seus dados serão enviados para a instituição Palavra Viva, localizada na zona leste')
             print('Assim que o transporte estiver a caminho, voce sera notificado\n')
             print('Endereço cadastro, resumo da operação:')
             print(f'Logradouro: {logradouro}')
@@ -114,12 +114,12 @@ def cadastro_donatario():
     print('A seguir voce irá informar sua renda para identificarmos o seu nivel de prioridade\n')
     print('--------NIVEIS DE PRIORIDADE--------')
     print('Existem três niveis de prioridade:')
-    print('Nível 1: A que precisa de menos assistencia')
+    print('Nível 1: A que precisa de mais assistencia')
     print('Nível 2: A que precisa de assistencia nivel moderada')
     renda_bruta = float(input('Digite sua renda bruta somada de todos os moradores: '))
     qtd_pessoas_familia = int(input('Digite quantas pessoas moram na sua casa: '))
-    renda_per_capita = print(f'Renda per capita da familia: {prioridade}')
     prioridade = renda_bruta/qtd_pessoas_familia
+    print(f'Renda per capita da familia: {prioridade}')
     if prioridade == 1320:
         print('O seu nível de prioridade é nivel 2')
     elif prioridade < 1320:
@@ -140,7 +140,7 @@ def lista_de_alimentos_doacao():
             for alimento in lista:
                 print(alimento)
             print('Lista criada e finalizada')
-            print('Sua lista será avaliada e doada.')
+            print('Muito obrigado pela sua gentileza e bondade!.')
             break
 
         lista.append(alimento)

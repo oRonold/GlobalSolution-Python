@@ -28,5 +28,6 @@ def menu():
         else:
             print('OPÇÃO INVÁLIDA')
             continue
+        break
 
 menu()
