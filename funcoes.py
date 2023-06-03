@@ -140,7 +140,7 @@ def lista_de_alimentos_doacao():
             for alimento in lista:
                 print(alimento)
             print('Lista criada e finalizada')
-            print('Para prosseguir para a doação por favor, volte ao menu e selecione DOAÇÃO')
+            print('Sua lista será avaliada e doada.')
             break
 
         lista.append(alimento)
