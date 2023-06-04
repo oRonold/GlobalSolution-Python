@@ -29,7 +29,6 @@ def doacao():
     alimento = input('Qual alimento voce quer doar? ')
     qtd = float(input('Qual a quantidade em KG? '))
     
-    
     print('A seguir conversaremos sobre o transporte do alimento')
     regiao_doacao = input('Digite em qual região voce quer que a sua doação seja redirecionada em São Paulo:(norte/sul/leste/oeste) ')
     if regiao_doacao == 'sul':
