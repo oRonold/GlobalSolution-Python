@@ -14,3 +14,4 @@ Esse projeto entrega uma possivel solução para o tema de Global Solution, a Fo
 Instruções
 
 Para o usuario conseguir utilizar o programa ele começará pelo menu, lá ele selecionara a opção desejada, ele sera redirecionado para a opção escolhida com todas as intruções sobre o que ele deverá fazer em cada uma.
+Como por exemplo, se o usuario for um doador, ele poderá fazer o cadastro ou seguir direto para a doação sem um cadastro, se o usuario for uma pessoa que depende da doação, o programa possui uma sessão especial para cadastro de pessoas com essa necessidade.
